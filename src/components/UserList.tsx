@@ -8,10 +8,15 @@ const UserList = () => {
   const userRepository = useContext(UserRepositoryContext);
 
   useEffect(() => {
-    userRepository?.getMany().then((response: ApiResponse<IUser[]>) => {
-      console.log(response);
-      setUsers(response.data);
-    });
+    userRepository
+      ?.getMany()
+      .then((response: ApiResponse<IUser[]>) => {
+        console.log(response);
+        setUsers(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }, [userRepository]);
 
   return (
