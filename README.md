@@ -15,6 +15,6 @@ This project demonstrates the implementation of a generic repository pattern in 
 To get started with this project, clone the repository and install dependencies:
 
 ```bash
-[git clone https://github.com/your-repository-url.git](https://github.com/JeffyJeff1980/react-repository.git)
+git clone https://github.com/JeffyJeff1980/react-repository.git
 cd react-repository
 npm install
