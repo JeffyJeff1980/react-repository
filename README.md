@@ -8,7 +8,7 @@ This project demonstrates the implementation of a generic repository pattern in 
 
 - Generic repository pattern implementation.
 - CRUD operations on entities using TypeScript.
-- Reactive UI updates with React.
+- Dependency Injection using the Context API
 
 ## Installation
 
