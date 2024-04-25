@@ -2,7 +2,7 @@ import React from "react";
 import UserRepository from "../repositories/UserRepository";
 
 // Create a context with a default value or null
-export const UserRepositoryContext = React.createContext<UserRepository | null>(null);
+export const UserRepositoryContext = React.createContext<UserRepository | undefined>(undefined);
 
 // Define the props for the provider component
 type ProviderProps = {

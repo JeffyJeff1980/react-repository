@@ -1,14 +1,14 @@
 import { useContext, useEffect, useState } from "react";
-import UserRepository, { IUser } from "../repositories/UserRepository";
+import { IUser } from "../repositories/UserRepository";
 import { ApiResponse } from "../base/BaseRepository";
 import { UserRepositoryContext } from "../context/UserRepositoryProvider";
 
 const UserList = () => {
   const [users, setUsers] = useState<IUser[]>();
-  const userRepository = useContext(UserRepositoryContext) as UserRepository;
+  const userRepository = useContext(UserRepositoryContext);
 
   useEffect(() => {
-    userRepository.getMany().then((response: ApiResponse<IUser[]>) => {
+    userRepository?.getMany().then((response: ApiResponse<IUser[]>) => {
       console.log(response);
       setUsers(response.data);
     });
