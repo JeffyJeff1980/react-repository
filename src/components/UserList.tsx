@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import UserRepository, { IUser } from "../repositories/UserRepository";
 import { ApiResponse } from "../base/BaseRepository";
-import { UserRepositoryContext } from "../context/UserRepositoryContext";
+import { UserRepositoryContext } from "../context/UserRepositoryProvider";
 
 const UserList = () => {
   const [users, setUsers] = useState<IUser[]>();
